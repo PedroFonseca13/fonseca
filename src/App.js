@@ -1,13 +1,17 @@
-import './App.css';
+import * as React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import './assets/css/App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Tamo chegando, vagabundo!</h1>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Routes>
+				<Route path="/" element={ <Home /> } />
+				{/* <Route path="about" element={ <About /> } /> */ }
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
